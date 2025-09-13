@@ -20,6 +20,8 @@ Map<String, dynamic> activities = {
   'Be Bored and Deal With It': 'assets/images/black.jpg',
   'Jump Rope': 'assets/images/jumprope.jpg',
   'Exercise': 'assets/images/exercise.jpg',
+  'Call a Friend': 'assets/images/phone.jpg',
+  'Paint, Draw, or Color Something': 'assets/images/draw.jpg',
 };
 
 /*
