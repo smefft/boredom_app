@@ -1,16 +1,35 @@
-# boredom_app
+# Boredom App
 
-A new Flutter project.
+A cross-platform app to cure your boredom! Hit the boredom button to get ideas for
+things to do that do not involve a screen. 
 
-## Getting Started
+Activities are selected at random, and the same activity can sometimes be shown 
+multiple times in a row. 
 
-This project is a starting point for a Flutter application.
+## Running the app
 
-A few resources to get you started if this is your first Flutter project:
+To run the demo, clone the repository and run the main.dart file on the simulator or emulator
+of your choice.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Adding a new activity
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Others can add new activities to the suggestions using the Map called `activities` in `lib/activities.dart`.
+To add a new activity:
+1) add an image with a unique name related to the activity to the `assets/images` folder. MAKE SURE YOU HAVE PERMISSION TO USE THE PHOTO OR THAT IT IS ROYALTY FREE
+2) put the SHORT description of the activity as the key (Use Title Case) and 
+3) put the path to the image as the value in the map
+
+Example: 
+`'Read a Book': 'assets/images/bookcase.jpg'`,
+
+## Design choices made
+
+This app neede to stay as simple as possible. It aims to inspire the user 
+with beautiful backgrounds and open-ended, short descriptions of activities.
+
+Using real user input, the decision was made to return to the boredom button if the 
+activity description is clicked, and continue being shown activities if the 'Still Bored' 
+button is clicked. 
+
+Intentionally, no other links or functionality exists within the app.
+
